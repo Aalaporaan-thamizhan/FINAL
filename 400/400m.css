@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vidaloka');
-
+@font-face {
+    font-family: 'DAGGERSQUARE'; 
+    src: url("DAGGERSQUARE.otf") format("opentype");
+    font-style: normal;
+}
 #mainNav .navbar-toggler{
   font-size:12px;
   right:0;
@@ -35,7 +39,8 @@ height: 400px;
         padding:.75em 0;
         letter-spacing:1px;
         color:#b72d39;
-        font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+        /*font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif*/
+        font-family: DAGGERSQUARE;
         }
       #mainNav .navbar-nav .nav-item .nav-link.active,#mainNav .navbar-nav .nav-item .nav-link:hover{
         color:#656A93;
@@ -85,9 +90,7 @@ height: 400px;
     text-decoration: none;
      background-color: #F2DCDD; 
 }
-.text-uppercase {
-    text-transform: uppercase!important;
-}
+
 #mainNav .navbar-nav{
 font-size: 1.5em !important;
 margin-top: 10px;
@@ -102,28 +105,7 @@ margin-top: 10px;
     margin-right: -35px;
     margin-left: -35px;
 }
-/*        @media (min-width: 992px)
-{
- .container {
-    max-width: 960px;
-}
-}
-@media (min-width: 768px)
-{
- .container {
-    max-width: 720px;
-}
-}
-@media (min-width: 576px)
-{
- .container{
-    max-width: 540px;
-}
-}*/
-/*.container{
-display: flex;
-}
-*/        .logo{
+   .logo{
   /*width: 300px;*/
   height: 90px;
 }
@@ -132,6 +114,7 @@ display: flex;
 @media all and (min-width:320px) and (max-width: 475px) {
   table{
       font-size: 16px !important;
+
   }
   .measure h2{
      font-size: 18px !important;
@@ -158,6 +141,8 @@ display: flex;
 }
 .con h2,h3{
   font-size: 20px !important;
+  font-family: DAGGERSQUARE;
+  color: #b72d39;
 }
 }
 
@@ -174,11 +159,11 @@ body{
     overflow-x: hidden;
 }
 form{
-    background-color: #DDD;
+    /*background-color: #DDD;*/
 }
 .formBox{
-    margin-top: 320px;
-    margin-bottom: 120px;
+    margin-top: 220px;
+    margin-bottom: 220px;
     padding: 50px;
 }
 .formBox  h2 {
@@ -188,12 +173,14 @@ form{
     margin-bottom: 50px;
     text-transform: uppercase;
     font-size: 38px;
-    color: #29602c;
+    color: #b72d39;
+    font-family: DAGGERSQUARE;
 }
 .formBox h3{
     text-align: center;
     margin-bottom: 50px;
-    color: #29602c;
+    color: #b72d39;
+    font-family: DAGGERSQUARE;
 }
 .inputBox{
     position: relative;
@@ -275,11 +262,11 @@ form{
   .radio.radio-inline {
     margin-top: 0; }
     .radio-info input[type="radio"] + label::after {
-  background-color: #5bc0de; }
+  background-color: #3E445E; }
 .radio-info input[type="radio"]:checked + label::before {
-  border-color: #5bc0de; }
+  border-color: #3E445E; }
 .radio-info input[type="radio"]:checked + label::after {
-  background-color: #5bc0de; }
+  background-color: #3E445E; }
 
 
 
@@ -305,7 +292,7 @@ input[type=text] {
 }
 input[type=text]:focus {
   outline: none;
-  box-shadow: -8px 10px 0px -7px #45a049, 8px 10px 0px -7px #45a049;
+  box-shadow: -8px 10px 0px -7px #3E445E, 8px 10px 0px -7px #3E445E;
 }
 input[type=number] {
   height:17px;
@@ -318,7 +305,7 @@ input[type=number] {
 }
 input[type=number]:focus{
   outline: none;
-  box-shadow: -8px 10px 0px -7px #45a049, 8px 10px 0px -7px #45a049;
+  box-shadow: -8px 10px 0px -7px #3E445E, 8px 10px 0px -7px #3E445E;
 }
 
 .inputBox .inputText{
@@ -374,13 +361,16 @@ input[type=number]:focus{
 
 /*RESULT*/
 .con {
-  margin-top: 70px;
+  margin-top: 170px;
   padding-bottom: 30px;
   background-color: #fcfcfc;
   box-shadow: -2px 1px 20px -5px #000000;
   border-radius: 5px;
 }
-
+.con h2,h3{
+  font-family: DAGGERSQUARE;
+  color: #b72d39;
+}
 .results {
   margin-top: 20px;
   width: 100%;
@@ -409,7 +399,7 @@ input[type=number]:focus{
   margin: 0px auto;
 }
 
-#tracklink, #measurelink {
+#tracklink, #measurelink,#downloadlink {
   font-size: 24px;
   color: #2BBBAD;
   font-family: Arial;
@@ -428,8 +418,9 @@ input[type=number]:focus{
   /*overflow: hidden;*/
 }
 #tracklink, #calculate{
-    color: white;
-    background: #2c9931 ;
+    color:  #b72d39;
+    border: dashed;
+    background:#F2DCDD;
     padding: 10px 20px;
     display: block;
     margin: 10px 0;
@@ -439,12 +430,13 @@ input[type=number]:focus{
     font-size: 18px;
     text-decoration: none;
 }
+
  
 #tracklink:hover ,#calculate:hover{
-    background:#45a049;
+    background:rgb(183, 45, 57,.80);
 }
 
-#tracklink:hover, #measurelink:hover,#calculate:hover {
+#tracklink:hover,#downloadlink:hover, #measurelink:hover,#calculate:hover {
   opacity: 0.8;
 }
 
@@ -452,13 +444,16 @@ table{
     font-size: 18px;
 
 }
-.table-dark {
-   color: #000;
-    background-color: #DDD;
-    
+/*.table-dark {
+   color: #b72d39;
+    background-color: #F2DCDD;  
+}*/
+.table-dark tr:hover{
+  color: #b72d39;
+  background-color: #F2DCDD; 
 }
 .table-dark th{
-    color: #DDD;
+    color: #fff;
 }
 tr{
     border-bottom: 2px solid;
@@ -466,10 +461,10 @@ tr{
 .table-dark tr:hover {
     /*background-color: #c6c8ca;*/
     /*color: #000;*/
-    background-color: rgba(255,255,255,.55);
+    /*background-color: rgba(255,255,255,.55);*/
 }
 .table-dark th{
-    background-color: #212529;
+    background-color: #656A93;
 }
 
 td, th {
@@ -482,7 +477,8 @@ td, th {
     right: 0;
     border-bottom: 5px solid #000;
     margin-bottom: 10px;
-    color:  #2c9931;
+    color:  #b72d39;
+    font-family: DAGGERSQUARE;
 }
 #canvas {
   width: 100%;
@@ -504,16 +500,16 @@ form {
 
 .button2{
     /*border-radius: 4px;*/
-  background-color: #db1024 !important;
+  background-color: #F2DCDD !important;
   border: none;
-  color: #FFFFFF !important;
+  color: #b72d39 !important;
   font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     font-style: normal;
     color: #fff;
     font-weight: 700;
   text-align: center;
-  /*font-size: 28px;*/
+ border: dashed;
   padding: 15px 20px;
   width: 200px;
   transition: all 0.5s;
@@ -525,8 +521,8 @@ form {
 
 }
 .button2:hover{
-    background-color: rgba(255,50,50,.80) !important;
-    text-decoration: none;
+    background-color: rgb(242, 220, 221,.80) !important;
+    text-decoration: none !important;
 }
 .button2 span {
   cursor: pointer;
@@ -612,6 +608,7 @@ text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 1em 0;
+    font-family: DAGGERSQUARE;
 }
 
 .footer2 .footer nav ul li a {
@@ -628,7 +625,7 @@ text-align: center;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
             }
             .fa:hover {
                 opacity: 0.7;

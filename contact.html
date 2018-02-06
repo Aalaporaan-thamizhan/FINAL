@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+    <link rel="icon" href="img/icon.png">
     <title>VISWANATH</title>
 
     <!-- Bootstrap core CSS -->
@@ -24,7 +24,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/index.css" rel="stylesheet">
-
+<!-- <link href="400/400m.css" rel="stylesheet"> -->
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -32,7 +32,7 @@
 		
 </head>
 
-<body  style="background-color: #fff;">
+<body  style="background-color: #fff; " >
 	<!-- Navigation -->
     
  <nav class="navbar navbar-expand-lg navbar-fixed-top" id="mainNav">
@@ -57,54 +57,65 @@
   </div>
 </nav>
 <!-- Navigation ENDS -->
-	<div class="container feedform">
-		<div class="row">
-		<div class="col-md-6">
-		<div class="contact text-center">
-<h1>CONTACT</h1>
-			<div class="avatar">
+	<div class="container " id="input">
+      <div class="formBox">
+        <form class="rounded">
+            <div class="row">
+              <div class="col-sm-12 col-xs-12 measure">
+                <h2>Your Feedback Matters!</h2><!-- 
+                <div class="avatar text-center">
 <img src="img/profile.jpg">
-			</div>
-				<p class="para">Dr. S.Viswanath Ph.D., NIS Dip. in Sports Coaching (Hockey) </p>
-				<p>Senior sports Biomechanist,</p>
-				<p>National Sports Institute ,</p>
-				<p>Bukit Jalil,</p>
-				<p>Kuala Lumpur 57000,</p>
-				<p>Malaysia.</p>
-				Email : viswabdu@gmail.com<br>
-				Phone : +918870599388/0142901280
-				
-			</div>
-		</div>
-			<div class="col-md-6">
-			<div class="feedback  text-center">
-				<h1>Feedback</h1>
-			<form action="https://formspree.io/viswabdu@gmail.com" method="POST">
-				<div class="left">
-					<div class="name">
-						<i class="fa fa-user" aria-hidden="true"></i>
-						<input type="text" name="name" class="name" placeholder="Your Name" required="">
-					</div>
-					<div class="email">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-						<input type="text" name="_replyto" class="email" placeholder="Your Email" required="">
-					</div>
-					<div class="phone">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-						<input type="tel" name="phone" class="phone" placeholder="Your Phone" required="">
-					</div>
-					<div class="subject">
-						<i class="fa fa-pencil" aria-hidden="true"></i>
-						   <textarea class="subject" name="message" placeholder="Write something.." style="height:200px"></textarea>
-					</div>
-					<input type="submit" value="Send">
-				</div>
-			</form>
-			<div class="clear"></div>
-		</div>
-	</div>
-	</div>
-	</div>
+</div> -->
+                <!-- <h3><strong>200m Track</strong></h3> -->
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox ">
+                  <input type="text" id="name_in" class="input" name="name" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
+                  <label class="label-helper" for="input">Name :</label>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  <input type="text" id="univ_in" class="input" name="_replyto" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+                  <label class="label-helper" for="input">Email :</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  
+                  <input type="number" id="length" class="input" name="phone" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
+                  <label class="label-helper" for="input">Phone</label>
+                </div>
+              </div>
+
+         
+                  <div class="col-sm-12">
+                <div class="inputBox">
+                  
+                  <input type="text" id="lanes" class="input" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'">
+                  <label class="label-helper" for="input">Message</label>
+                </div>
+              </div>
+            </div>
+
+            
+              
+              <div class="col-sm-12 text-center">
+                <a  id="calculate" href="#" class="button rounded" value="Calculate"><strong>Send</strong></a>
+              </div>
+         
+                      
+        </form>
+    </div>
+  </div>
+
 	<footer class="footer2">
     <div class="footer">
         <div class="container">
@@ -138,13 +149,8 @@
                 <div class="text-center col-md-12 footer-bottom"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Dr.S.Viswanath. All right reserved.<br>Designed & Developed by <a href="https://www.linkedin.com/in/pugazh-arasan"> Pugazharasan.</a></div>
             </div> <!--/.row--> 
 
-        </div> <!--/.container--> 
-    </div> <!--/.footer-->
-  <!--   <div class="footer-bottom">
-        <div class="container">
-            <div class="pull-left"> Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Dr.S.Viswanath. All right reserved.<br>Designed & Developed by <a href="https://www.linkedin.com/in/pugazh-arasan"> Pugazharasan.</a></div>
-        </div>
-    </div> --> <!--/.footer-bottom--> 
+        </div> 
+    </div> 
 </footer>
 <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.min.js"></script>

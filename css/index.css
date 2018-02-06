@@ -3,7 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vidaloka');
 
-
+@font-face {
+    font-family: 'DAGGERSQUARE'; 
+    src: url("DAGGERSQUARE.otf") format("opentype");
+    font-style: normal;
+}
 #mainNav .navbar-toggler{
   font-size:12px;
   right:0;
@@ -17,7 +21,8 @@
   padding-right: 0;
 height: 400px;
   /*background-color:#160a09!important;*/
-  font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+  /*font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif*/
+  font-family: DAGGERSQUARE;
   }
   #mainNav .navbar-brand{
     color:#fed136;
@@ -38,7 +43,8 @@ height: 400px;
         padding:.75em 0;
         letter-spacing:1px;
         color:#b72d39;
-        font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif
+        /*font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif*/
+        font-family: DAGGERSQUARE;
         }
       #mainNav .navbar-nav .nav-item .nav-link.active,#mainNav .navbar-nav .nav-item .nav-link:hover{
         color:#656A93;
@@ -88,9 +94,9 @@ height: 400px;
     text-decoration: none;
      background-color: #F2DCDD; 
 }
-.text-uppercase {
+/*.text-uppercase {
     text-transform: uppercase!important;
-}
+}*/
 #mainNav .navbar-nav{
 font-size: 1.5em !important;
 margin-top: 10px;
@@ -151,7 +157,11 @@ margin-top: 10px;
     position: relative;
     color: #fff;
     padding-bottom: 30px;
+    font-family: DAGGERSQUARE;
 } 
+.fdag{
+  font-family: DAGGERSQUARE;
+}
 
 @media all and (min-width:320px) and (max-width: 475px) {
 
@@ -321,11 +331,14 @@ font-family: 'Vidaloka', serif;
      background: transparent;
 	 /*background-image: linear-gradient(#E9E9E9, #E9E9E9);*/
 	 background-color: #DDD;
-	 border-radius: 20px;
-	 border: 5px solid #07b5ca;
+	 /*border-radius: 20px;*/
+	 /*border: 2px solid #656A93;*/
    padding-bottom: 35px;
    margin-bottom: 35px;
    /*margin-left: 1px;*/
+}
+.card:hover{
+  box-shadow: 0 4px 8px 0  #656A93;
 }
 .disc{
   padding-top: 250px !important;
@@ -419,6 +432,7 @@ li {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 1em 0;
+    font-family: DAGGERSQUARE;
 }
 
 .footer2 .footer nav ul li a {
@@ -435,7 +449,7 @@ li {
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
             }
             .fa:hover {
                 opacity: 0.7;
@@ -721,13 +735,13 @@ margin-top: 50px;
 
 }
 
-.contact .avatar {
+.avatar {
     position: relative;
     /*top: -50px;*/
     margin-bottom: 5px;
 }
 
-.contact .avatar img {
+ .avatar img {
     width: 100px;
     height: 100px;
     max-width: 100px;
@@ -740,4 +754,254 @@ margin-top: 50px;
 .white{
     background-color: white!important;
     
+}
+
+
+/*Feedback*/
+@media all and (min-width:320px) and (max-width: 475px) {
+  table{
+      font-size: 16px !important;
+  }
+  .measure h2{
+     font-size: 18px !important;
+     
+  }
+  .formBox{
+  padding: 0px !important;
+
+  }
+  .measure h3{
+    font-size: 17px  !important;
+  }
+  .inputBox .input{
+    font-size: 16px !important;
+  }
+  .radio label{
+    font-size: 16px  !important;
+  }
+  .results{
+    display: block !important;
+  }
+.button2{
+  font-size: 14px !important;
+}
+.con h2,h3{
+  font-size: 20px !important;
+}
+}
+
+/*Form begins*/
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.measure h2{
+  font-family: DAGGERSQUARE;
+}
+form{
+    /*background-color: #DDD;*/
+}
+.formBox{
+    margin-top: 220px;
+    margin-bottom: 220px;
+    padding: 50px;
+}
+.formBox  h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #b72d39;
+}
+.formBox h3{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #29602c;
+}
+.inputBox{
+    position: relative;
+    box-sizing: border-box;
+
+    margin-bottom: 50px;
+}
+.label-helper {
+  position: absolute;
+  opacity: 0;
+  transition: .2s bottom, .2s opacity;
+  bottom: 0;
+  left: 0;
+  z-index: 1; }
+
+.radiobts {
+  text-align: center;
+  padding-bottom: 10%;
+  
+}
+.radio{
+    padding-bottom: 5%;
+}
+  .radio label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px; 
+    font-size: 18px;
+}
+    .radio label::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid #cccccc;
+      border-radius: 50%;
+      background-color: #fff;
+      -webkit-transition: border 0.15s ease-in-out;
+      -o-transition: border 0.15s ease-in-out;
+      transition: border 0.15s ease-in-out;
+       }
+    .radio label::after {
+      display: inline-block;
+      position: absolute;
+      content: " ";
+      width: 11px;
+      height: 11px;
+      left: 3px;
+      top: 3px;
+      margin-left: -20px;
+      border-radius: 50%;
+      background-color: #555555;
+      -webkit-transform: scale(0, 0);
+      -ms-transform: scale(0, 0);
+      -o-transform: scale(0, 0);
+      transform: scale(0, 0);
+      -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+      transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33); }
+  .radio input[type="radio"] {
+    opacity: 0; }
+    .radio input[type="radio"]:focus + label::before {
+      outline: thin dotted;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px; }
+    .radio input[type="radio"]:checked + label::after {
+      -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      -o-transform: scale(1, 1);
+      transform: scale(1, 1); }
+    .radio input[type="radio"]:disabled + label {
+      opacity: 0.65; }
+      .radio input[type="radio"]:disabled + label::before {
+        cursor: not-allowed; }
+  .radio.radio-inline {
+    margin-top: 0; }
+    .radio-info input[type="radio"] + label::after {
+  background-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::before {
+  border-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::after {
+  background-color: #5bc0de; }
+
+
+
+input:focus + .label-helper, .input:invalid + .label-helper {
+  bottom: 95%;
+  font-family: arial;
+  font-size: 18px;
+  line-height: 1;
+  opacity: 1;
+  padding: 4px; 
+}
+input{
+    padding-left: 15px;
+}
+input[type=text] {
+  height:17px;
+  border: 0;
+  width: calc(100% - 2px);
+  margin-left:1px;
+  box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+input[type=text]:focus {
+  outline: none;
+  box-shadow: -8px 10px 0px -7px #3E445E, 8px 10px 0px -7px #3E445E;
+}
+input[type=number] {
+  height:17px;
+  border: 0;
+  width: calc(100% - 2px);
+  margin-left:1px;
+  box-shadow: -8px 10px 0px -7px #ebebeb, 8px 10px 0px -7px #ebebeb;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+input[type=number]:focus{
+  outline: none;
+  box-shadow: -8px 10px 0px -7px #3E445E, 8px 10px 0px -7px #3E445E;
+}
+
+.inputBox .inputText{
+    position: absolute;
+    font-size: 15px;
+    line-height: 50px;
+    transition: .5s;
+    opacity: .5;
+}
+.inputBox .input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+
+}
+.focus .inputText{
+    transform: translateY(-30px);
+    font-size: 18px;
+    opacity: 1;
+    color: #00bcd4;
+
+}
+#calculate{
+  
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+}
+/*.button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #45a049;
+    color: #fff;
+    font-size: 28px;
+}*/
+
+.separator {
+  width: 50px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.rounded{
+    border-radius: 30px;
 }
