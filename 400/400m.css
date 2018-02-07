@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Vidaloka');
 @font-face {
     font-family: 'DAGGERSQUARE'; 
-    src: url("DAGGERSQUARE.otf") format("opentype");
+    src: url("../css/DAGGERSQUARE.otf") format("opentype");
     font-style: normal;
 }
 #mainNav .navbar-toggler{
