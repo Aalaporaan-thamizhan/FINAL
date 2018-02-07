@@ -298,7 +298,7 @@ doc.autoTable(table5.columns, table5.data, {
             pageBreak: 'avoid',
         });
 
-doc.save("new.pdf");
+doc.save("400m-measurements.pdf");
     // return doc;
 };
 
