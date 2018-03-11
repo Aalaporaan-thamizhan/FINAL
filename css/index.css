@@ -3,9 +3,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Vidaloka');
 
-@font-face {
+/*@font-face {
     font-family: 'DAGGERSQUARE'; 
     src: url("DAGGERSQUARE.otf") format("opentype");
+    font-style: normal;
+}*/
+@font-face {
+    font-family: 'Blockletter'; 
+    src: url("Blockletter.otf") format("opentype");
     font-style: normal;
 }
 #mainNav .navbar-toggler{
@@ -16,13 +21,13 @@
   color:#fff;
   border:0;
   /*background-color:#fed136;*/
-  background-color: #F2DCDD;
+  background-color: #F8E1B7;
   padding-left: 0;
   padding-right: 0;
 height: 400px;
   /*background-color:#160a09!important;*/
   /*font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif*/
-  font-family: DAGGERSQUARE;
+  font-family: Blockletter;
   }
   #mainNav .navbar-brand{
     color:#fed136;
@@ -42,15 +47,15 @@ height: 400px;
         font-weight:400;
         padding:.75em 0;
         letter-spacing:1px;
-        color:#b72d39;
+        color:#B32E31;
         /*font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif*/
-        font-family: DAGGERSQUARE;
+        font-family: Blockletter;
         }
       #mainNav .navbar-nav .nav-item .nav-link.active,#mainNav .navbar-nav .nav-item .nav-link:hover{
         color:#656A93;
         }
         #mainNav{
-          background-color: #F2DCDD;
+          background-color: #F8E1B7;
           min-height: 102.500px;
           padding-left: 0px;
         }
@@ -59,11 +64,11 @@ height: 400px;
           
             -webkit-transition:padding-top .3s,padding-bottom .3s;-moz-transition:padding-top .3s,padding-bottom .3s;transition:padding-top .3s,padding-bottom .3s;
             border:none;
-            background-color:#F2DCDD;
+            background-color:#F8E1B7;
             padding-left: 0;
             padding-right: 0;
             /*background-color:#160a09!important;*/
-            /*background-color: #F2DCDD !important;*/
+            /*background-color: #F8E1B7 !important;*/
             }
           #mainNav .navbar-brand{
             font-size:1.75em;
@@ -81,7 +86,7 @@ height: 400px;
           #mainNav.navbar-shrink{
             padding-top:0 !important;
             padding-bottom:0 !important;
-            background-color:#F2DCDD!important;
+            background-color:#F8E1B7!important;
             padding-left: 0;
             padding-right: 0;
           }
@@ -92,7 +97,7 @@ height: 400px;
         }
         .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
-     background-color: #F2DCDD; 
+     background-color:#F8E1B7; 
 }
 /*.text-uppercase {
     text-transform: uppercase!important;
@@ -157,10 +162,10 @@ margin-top: 10px;
     position: relative;
     color: #fff;
     padding-bottom: 30px;
-    font-family: DAGGERSQUARE;
+    font-family: Blockletter;
 } 
 .fdag{
-  font-family: DAGGERSQUARE;
+  font-family: Blockletter;
 }
 
 @media all and (min-width:320px) and (max-width: 475px) {
@@ -181,12 +186,15 @@ margin-top: 10px;
     height: 100%;*/
     /*width: 100%;*/
 }
+.cardbut{
+  margin-top: 25px;
+}
 .button{
 	border-radius: 4px;
   /*background-color: #db1024 !important;*/
-  background-color: #F2DCDD !important;
+  background-color: #F8E1B7 !important;
   border: dashed;
-  color:  #b72d39!important;
+  color: #B32E31!important;
   font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -262,9 +270,17 @@ body
     overflow-x: hidden;
          
 } 
-.logo{
+.navbar-brand{
   /*width: 300px;*/
-  height: 90px;
+  position: relative;
+ width: 170px;
+    left: 15px;
+    max-height: 100px;
+    padding-top: 4px;
+}
+.logo{
+
+ max-height: 100px;
 }
 .bg-img{
    padding-left: 0px !important;
@@ -329,10 +345,7 @@ font-family: 'Vidaloka', serif;
 .card{
 	border-bottom: none;
      background: transparent;
-	 /*background-image: linear-gradient(#E9E9E9, #E9E9E9);*/
-	 background-color: #DDD;
-	 /*border-radius: 20px;*/
-	 /*border: 2px solid #656A93;*/
+
    padding-bottom: 35px;
    margin-bottom: 35px;
    /*margin-left: 1px;*/
@@ -372,7 +385,7 @@ font-family: 'Vidaloka', serif;
   }
 }
 .disc h3{
-  font-family: DAGGERSQUARE;
+  font-family: Blockletter;
   color: #b72d39 ;
 }
 .disc  p{
@@ -416,7 +429,7 @@ li {
    /*background-color: #1c1d1e !important;*/
    /*background-color: #160a09 !important;*/
     /*color: #000 !important;*/
-    background-color:#F2DCDD!important;
+    background-color:#F8E1B7!important;
     /*color: #fff;*/
     font-size: 18px;
     padding: 35px 0;
@@ -444,7 +457,7 @@ li {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 1em 0;
-    font-family: DAGGERSQUARE;
+    font-family: Blockletter;
 }
 
 .footer2 .footer nav ul li a {
@@ -682,7 +695,7 @@ h1.about {
 }
 @media( max-width: 600px){
 img{
-  max-width:100% ;
+  /*max-width:100% ;*/
 }
 }
 
